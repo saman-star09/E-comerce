@@ -37,7 +37,7 @@ export default function StoreFooter() {
               href="#top"
               className="flex items-center gap-2 font-display text-xl font-extrabold text-white"
             >
-              <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-coral-500 to-berry-500 text-white">
+              <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-coral-500 text-white">
                 <ShoppingBag className="h-4 w-4" />
               </span>
               Kiwi<span className="text-coral-400">market</span>
@@ -61,7 +61,7 @@ export default function StoreFooter() {
           </div>
 
           <div>
-            <h3 className="font-display text-sm font-extrabold uppercase tracking-wide text-sunny-400">
+            <h3 className="font-display text-sm font-extrabold uppercase tracking-wide text-cream/40">
               Shop
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
@@ -76,7 +76,7 @@ export default function StoreFooter() {
           </div>
 
           <div>
-            <h3 className="font-display text-sm font-extrabold uppercase tracking-wide text-teal-400">
+            <h3 className="font-display text-sm font-extrabold uppercase tracking-wide text-cream/40">
               Customer Service
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
@@ -91,7 +91,7 @@ export default function StoreFooter() {
           </div>
 
           <div className="rounded-3xl bg-white/5 p-6">
-            <h3 className="flex items-center gap-2 font-display text-sm font-extrabold uppercase tracking-wide text-berry-400">
+            <h3 className="flex items-center gap-2 font-display text-sm font-extrabold uppercase tracking-wide text-coral-400">
               <Mail className="h-4 w-4" />
               Stay in the loop
             </h3>
@@ -99,7 +99,7 @@ export default function StoreFooter() {
               Get 10% off your first order plus sunny deals in your inbox.
             </p>
             {subscribed ? (
-              <p className="mt-4 rounded-full bg-teal-500/20 px-4 py-2.5 text-center text-sm font-bold text-teal-300">
+              <p className="mt-4 rounded-full bg-coral-500/20 px-4 py-2.5 text-center text-sm font-bold text-coral-300">
                 🎉 You're subscribed!
               </p>
             ) : (

@@ -16,14 +16,14 @@ export default function StoreHeader({
   return (
     <header className="sticky top-0 z-40">
       {bannerOpen && (
-        <div className="relative flex items-center justify-center gap-2 bg-sunny-400 px-4 py-2 text-center text-sm font-bold text-ink">
+        <div className="relative flex items-center justify-center gap-2 bg-coral-500 px-4 py-2 text-center text-sm font-bold text-white">
           <Sparkles className="hidden h-4 w-4 shrink-0 sm:block" />
           <span>Free shipping on orders over $50 — treat yourself! 🎉</span>
           <button
             type="button"
             onClick={() => setBannerOpen(false)}
             aria-label="Dismiss banner"
-            className="absolute right-3 rounded-full p-1 transition hover:bg-ink/10"
+            className="absolute right-3 rounded-full p-1 transition hover:bg-white/15"
           >
             <X className="h-4 w-4" />
           </button>
@@ -37,7 +37,7 @@ export default function StoreHeader({
               href="#top"
               className="flex shrink-0 items-center gap-2 font-display text-xl font-extrabold tracking-tight text-ink sm:text-2xl"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-coral-500 to-berry-500 text-white shadow-md shadow-coral-500/30">
+              <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-coral-500 text-white shadow-md shadow-coral-500/30">
                 <ShoppingBag className="h-5 w-5" />
               </span>
               <span>
@@ -60,11 +60,11 @@ export default function StoreHeader({
               type="button"
               onClick={onCartClick}
               aria-label="Open cart"
-              className="relative ml-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-ink text-white shadow-md transition hover:-translate-y-0.5 hover:bg-teal-600 active:translate-y-0"
+              className="relative ml-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-ink text-white shadow-md transition hover:-translate-y-0.5 hover:bg-coral-600 active:translate-y-0"
             >
               <ShoppingCart className="h-5 w-5" />
               {cartCount > 0 && (
-                <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full border-2 border-cream bg-berry-500 px-1 text-[11px] font-extrabold text-white">
+                <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full border-2 border-cream bg-coral-500 px-1 text-[11px] font-extrabold text-white">
                   {cartCount}
                 </span>
               )}
@@ -92,9 +92,7 @@ export default function StoreHeader({
                   onClick={() => onCategoryChange(isActive ? 'All' : link)}
                   className={`shrink-0 border-b-2 pb-1 transition ${
                     isActive
-                      ? link === 'Sale'
-                        ? 'border-berry-500 text-berry-600'
-                        : 'border-coral-500 text-coral-600'
+                      ? 'border-coral-500 text-coral-600'
                       : 'border-transparent text-ink/50 hover:text-ink'
                   }`}
                 >

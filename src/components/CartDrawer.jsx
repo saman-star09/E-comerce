@@ -67,19 +67,19 @@ export default function CartDrawer({
               {remainingForFreeShipping > 0 ? (
                 <p className="text-xs font-bold text-ink/60">
                   Add{' '}
-                  <span className="text-teal-600">
+                  <span className="text-coral-600">
                     ${remainingForFreeShipping.toFixed(2)}
                   </span>{' '}
                   more for free shipping!
                 </p>
               ) : (
-                <p className="text-xs font-extrabold text-teal-600">
+                <p className="text-xs font-extrabold text-coral-600">
                   🎉 You've unlocked free shipping!
                 </p>
               )}
               <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-ink/10">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-teal-400 to-teal-500 transition-all duration-500"
+                  className="h-full rounded-full bg-coral-500 transition-all duration-500"
                   style={{ width: `${shippingProgress}%` }}
                 />
               </div>
@@ -103,7 +103,7 @@ export default function CartDrawer({
                         type="button"
                         onClick={() => onRemove(item.id)}
                         aria-label={`Remove ${item.title}`}
-                        className="shrink-0 text-ink/30 transition hover:text-berry-500"
+                        className="shrink-0 text-ink/30 transition hover:text-coral-600"
                       >
                         <Trash2 className="h-4 w-4" />
                       </button>
@@ -169,7 +169,7 @@ export default function CartDrawer({
           </>
         ) : (
           <div className="flex flex-1 flex-col items-center justify-center gap-3 px-6 text-center">
-            <span className="flex h-16 w-16 items-center justify-center rounded-full bg-sunny-100 text-sunny-500">
+            <span className="flex h-16 w-16 items-center justify-center rounded-full bg-coral-100 text-coral-500">
               <ShoppingBag className="h-8 w-8" />
             </span>
             <p className="font-display text-lg font-extrabold text-ink">

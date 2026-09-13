@@ -12,22 +12,22 @@ const BADGES = [
     icon: Headphones,
     title: '24/7 Support',
     description: "We're here whenever you need",
-    bg: 'bg-teal-100',
-    fg: 'text-teal-600',
+    bg: 'bg-sand-100',
+    fg: 'text-sand-600',
   },
   {
     icon: ShieldCheck,
     title: 'Secure Payment',
     description: '100% protected checkout',
-    bg: 'bg-sunny-100',
-    fg: 'text-sunny-600',
+    bg: 'bg-coral-100',
+    fg: 'text-coral-600',
   },
   {
     icon: RotateCcw,
     title: '30-Day Returns',
     description: 'Easy, no-questions-asked',
-    bg: 'bg-berry-100',
-    fg: 'text-berry-600',
+    bg: 'bg-sand-100',
+    fg: 'text-sand-600',
   },
 ]
 

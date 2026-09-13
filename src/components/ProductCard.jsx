@@ -28,7 +28,7 @@ export default function ProductCard({ product, onAddToCart }) {
         {product.badge && (
           <span
             className={`absolute left-3 top-3 rounded-full px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-white shadow-sm ${
-              product.badge === 'Sale' ? 'bg-berry-500' : 'bg-teal-500'
+              product.badge === 'Sale' ? 'bg-ink' : 'bg-coral-500'
             }`}
           >
             {product.badge}
@@ -36,13 +36,13 @@ export default function ProductCard({ product, onAddToCart }) {
         )}
 
         <span className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-2.5 py-1 text-xs font-bold text-ink shadow-sm">
-          <Star className="h-3.5 w-3.5 fill-sunny-400 text-sunny-400" />
+          <Star className="h-3.5 w-3.5 fill-coral-500 text-coral-500" />
           {product.rating}
         </span>
       </div>
 
       <div className="flex flex-1 flex-col gap-2 p-4">
-        <p className="text-xs font-bold uppercase tracking-wide text-teal-600">
+        <p className="text-xs font-bold uppercase tracking-wide text-ink/40">
           {product.category}
         </p>
         <h3 className="font-display text-base font-bold leading-snug text-ink">
@@ -66,9 +66,7 @@ export default function ProductCard({ product, onAddToCart }) {
           type="button"
           onClick={handleAdd}
           className={`mt-2 flex w-full items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm font-bold text-white shadow-sm transition active:scale-95 ${
-            justAdded
-              ? 'bg-teal-500'
-              : 'bg-ink hover:bg-coral-500'
+            justAdded ? 'bg-coral-600' : 'bg-ink hover:bg-coral-500'
           }`}
         >
           {justAdded ? (

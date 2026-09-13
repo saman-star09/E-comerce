@@ -67,7 +67,7 @@ export default function ProductGrid({
         </div>
 
         <label className="flex items-center gap-2 rounded-full border-2 border-ink/10 bg-white px-4 py-2.5 text-sm font-bold text-ink shadow-sm">
-          <SlidersHorizontal className="h-4 w-4 shrink-0 text-teal-600" />
+          <SlidersHorizontal className="h-4 w-4 shrink-0 text-coral-600" />
           <span className="hidden text-ink/50 sm:inline">Sort by</span>
           <select
             value={sortBy}
